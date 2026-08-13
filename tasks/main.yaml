@@ -3,3 +3,10 @@
   tags:
   - brew
 
+- name: Install things
+  import_tasks: installs.yml
+
+- name: Cleanup
+  import_tasks: cleanup.yml
+  tags:
+  - cleanup
